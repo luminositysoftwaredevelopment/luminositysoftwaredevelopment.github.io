@@ -1,0 +1,40 @@
+body {
+    background-image:
+    radial-gradient(#3b394e 2%, transparent 0%),
+    radial-gradient(#9194a7 1%, transparent 0%);
+    background-color: rgb(1, 0, 18);
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
+    height: 100%;
+    width: 100%;
+
+}
+
+h1 {
+    color: white;
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: Monospace;
+    text-shadow: 1px 1px 5px white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-right: .15em solid #ffffff;
+    white-space: nowrap;
+    letter-spacing: .05em;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 380px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ffffff; }
+}
